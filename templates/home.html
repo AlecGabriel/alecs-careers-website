@@ -25,10 +25,7 @@
       <h2 class='text-center mt-2 mb-4'>Open Positions</h2>
       <div>
         {% for job in jobs %}
-          <div>
-            <h4 style="color:rbg(120, 120, 120)"">{{job['title']}}</h4>
-            <div><b>'Location:</b> {{job['location']</div>           
-          </div>
+          {% include 'jobitem.html' %}
         {% endfor %}
       </div>
       <div class='text-center'>
